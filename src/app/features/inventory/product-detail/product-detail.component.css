@@ -1,0 +1,44 @@
+/* Product Details Container */
+.product-details {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 50px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    margin-top: 70px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Product Information */
+p {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Bold labels */
+p strong {
+    color: #007bff;
+}
+
+/* Last item should not have a border */
+p:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .product-details {
+        width: 90%;
+    }
+}
