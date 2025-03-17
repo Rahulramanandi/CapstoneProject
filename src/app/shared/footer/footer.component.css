@@ -1,0 +1,25 @@
+/* Footer Styling */
+footer {
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Footer Text */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    footer {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+}
