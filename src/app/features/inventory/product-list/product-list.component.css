@@ -1,0 +1,98 @@
+/* Product List Container */
+.product-list {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List Item */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Last item should not have a border */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons */
+button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+/* Button Colors */
+button:nth-child(2) { /* View */
+    background: #007bff;
+    color: white;
+}
+
+button:nth-child(3) { /* Edit */
+    background: #ffc107;
+    color: black;
+}
+
+button:nth-child(4) { /* Delete */
+    background: #dc3545;
+    color: white;
+}
+
+/* Add Product Button */
+button[routerLink] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #28a745;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .product-list {
+        width: 90%;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
