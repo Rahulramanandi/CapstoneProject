@@ -1,0 +1,62 @@
+/* Navbar Styling */
+nav {
+    width: 100%;
+    background: #007bff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Line Break Styling */
+nav br {
+    display: none;
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Logout Button */
+nav button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover */
+nav button:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav br {
+        display: block;
+    }
+}
